@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create your account — Marginalia</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/auth.css">
+</head><body class="auth">
+<div class="card auth-card">
+  <a class="brand" href="/">Margin<span>alia</span></a>
+  <h1>Create your account</h1>
+  <p class="sub">Free to start. Takes a few seconds.</p>
+  <form id="authForm" data-endpoint="/api/signup">
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="new-password" minlength="8" required>
+    <div class="msg" id="msg" role="alert"></div>
+    <button class="btn" type="submit">Create your account</button>
+  </form>
+  <p class="switch">Already have an account? <a href="/login.html">Log in</a></p>
+</div>
+<script src="/auth.js"></script>
+</body></html>

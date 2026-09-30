@@ -1,0 +1,16 @@
+/* Login / signup layout — colours come from style.css */
+body.auth { display: grid; place-items: center; padding: 1.5rem; }
+.auth-card { width: min(100%, 420px); }
+.auth-card .brand { display: block; text-align: center; margin-bottom: 1.25rem; font-size: 1.5rem; }
+.auth-card h1 { font-size: 1.6rem; text-align: center; }
+.auth-card p.sub { text-align: center; }
+label { display: block; margin: 0 0 .35rem; font-weight: 600; font-size: .92rem; }
+input[type="email"], input[type="password"] {
+  width: 100%; padding: .8rem 1rem; margin-bottom: 1rem; font: inherit; color: var(--ink);
+  background: #fbfdff; border: 1.5px solid var(--line); border-radius: 10px;
+  transition: border-color .15s, box-shadow .15s;
+}
+input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.auth-card .btn { width: 100%; }
+.msg { min-height: 1.4rem; margin-bottom: .75rem; font-weight: 600; color: var(--danger-ink); }
+.switch { text-align: center; margin: 1.25rem 0 0; }
